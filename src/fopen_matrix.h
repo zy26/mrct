@@ -22,7 +22,7 @@ void fscanf2(FILE *file, float *x);
 void fscanf2(FILE *file, double *x);
 
 template <typename T>
-Matrix<T> load_matrix_from_file(FILE *fp, size_t reserved_count,
+Matrix<T> load_matrix_from_file(FILE *fp, std::size_t reserved_count,
                                 bool ignore_first) {
   Matrix<T> matrix(reserved_count); // RVO
 
@@ -45,7 +45,7 @@ Matrix<T> load_matrix_from_file(FILE *fp, size_t reserved_count,
   while (1 == fscanf(fp, "%s", value)) {
     matrix.row_names.push_back(value);
     std::vector<T> line_data(matrix.col_names.size());
-    for (size_t i = 0; i < matrix.col_names.size(); i++) {
+    for (std::size_t i = 0; i < matrix.col_names.size(); i++) {
       fscanf2(fp, &line_data[i]);
     }
     matrix.data.emplace_back(line_data);
@@ -53,10 +53,10 @@ Matrix<T> load_matrix_from_file(FILE *fp, size_t reserved_count,
   assert(matrix.row_names.size() == matrix.data.size());
   return matrix; // RVO
 }
-}
+} // namespace internal
 
 template <typename T>
-Matrix<T> load_matrix(const char *file_name, size_t reserved_count,
+Matrix<T> load_matrix(const char *file_name, std::size_t reserved_count,
                       bool ignore_first = true) {
   FILE *fp = fopen(file_name, "r");
   if (nullptr == fp) {

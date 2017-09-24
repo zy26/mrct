@@ -34,7 +34,7 @@ The Command Arguments should be ```testdata/E_coli_anaerobic.txt E_coli_anaerobi
 
 Warning: Try to avoid **Debug** mode, it may be very slow.
 
-# What is the output means?
+# What does the output mean?
 
 You will see the content of output file as below somehow.
 

@@ -20,6 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -148,12 +149,13 @@
     <ClCompile Include="lib\calculate_hubs.cc" />
     <ClCompile Include="src\fopen_matrix.cc" />
     <ClCompile Include="src\mrct.cc" />
+    <ClCompile Include="src\vector_matrix.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib\calculate_hubs.h" />
     <ClInclude Include="lib\distance.h" />
     <ClInclude Include="src\fopen_matrix.h" />
-    <ClInclude Include="lib\pearson_correlation.h" />
+    <ClInclude Include="src\vector_matrix.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,13 +18,13 @@
     <ClInclude Include="lib\distance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="lib\pearson_correlation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="lib\calculate_hubs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\fopen_matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vector_matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -36,6 +36,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\fopen_matrix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector_matrix.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

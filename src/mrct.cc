@@ -1,5 +1,6 @@
 #include "../lib/calculate_hubs.h"
 #include "fopen_matrix.h"
+#include "vector_matrix.h"
 #include <fstream>
 #include <iostream>
 
